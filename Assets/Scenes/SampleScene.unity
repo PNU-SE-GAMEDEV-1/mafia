@@ -412,12 +412,12 @@ GameObject:
   - component: {fileID: 72226899}
   - component: {fileID: 72226898}
   m_Layer: 5
-  m_Name: CanvasSLevelSelect
+  m_Name: CanvasLevelSelect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &72226898
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -495,7 +495,7 @@ RectTransform:
   m_Children:
   - {fileID: 138873051}
   - {fileID: 1163407498}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1103270654}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2754,6 +2754,7 @@ GameObject:
   - component: {fileID: 783868618}
   - component: {fileID: 783868617}
   - component: {fileID: 783868616}
+  - component: {fileID: 783868619}
   m_Layer: 5
   m_Name: Singleplayer
   m_TagString: Untagged
@@ -2863,6 +2864,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 783868614}
   m_CullTransparentMesh: 1
+--- !u!114 &783868619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 783868614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5912529d2297e5d41b3137a40668ca6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &794413569
 GameObject:
   m_ObjectHideFlags: 0
@@ -2959,7 +2972,7 @@ RectTransform:
   m_Children:
   - {fileID: 2126508620}
   - {fileID: 803665565}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1103270654}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -4023,6 +4036,39 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1099495073}
   m_CullTransparentMesh: 1
+--- !u!1 &1103270653
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1103270654}
+  m_Layer: 0
+  m_Name: SingleplayerCanvases
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1103270654
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1103270653}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 894.2407, y: 574.4083, z: 154.93518}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 794413573}
+  - {fileID: 72226901}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1109495520
 GameObject:
   m_ObjectHideFlags: 0
@@ -4738,12 +4784,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1162288462}
+  - component: {fileID: 1162288463}
   m_Layer: 0
   m_Name: CanvasSwitchLogic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1162288462
 Transform:
@@ -4760,6 +4807,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1162288463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1162288461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69b2e7c53c677b54cb0a1cc91ec74623, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  active: {fileID: 1595067143}
 --- !u!1 &1163407497
 GameObject:
   m_ObjectHideFlags: 0
@@ -5658,7 +5718,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1595067144
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7020,6 +7080,5 @@ SceneRoots:
   - {fileID: 1318793921}
   - {fileID: 1162288462}
   - {fileID: 1595067147}
-  - {fileID: 794413573}
-  - {fileID: 72226901}
+  - {fileID: 1103270654}
   - {fileID: 988837316}
