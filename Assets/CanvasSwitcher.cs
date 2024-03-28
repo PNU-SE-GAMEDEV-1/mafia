@@ -6,7 +6,7 @@ public class CanvasSwitcher : MonoBehaviour
 {
     private Button thisButton;
     public GameObject target;
-    // Start is called before the first frame update
+    // public TMP_InputField input;
     void Start()
     {
         thisButton = GetComponent<Button>();
