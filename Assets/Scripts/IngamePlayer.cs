@@ -7,7 +7,7 @@ public class IngamePlayer
 {
     public long id;
     public string name;
-    public Alignment.AlignmentType alignment;
-    public GameRole.RoleType role;
+    public Alignment alignment;
+    public GameRole role;
     public bool isAlive;
 }

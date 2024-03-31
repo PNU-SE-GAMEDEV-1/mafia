@@ -4,7 +4,7 @@ using UnityEngine;
 [System.Serializable]
 public class PlayerProfile
 {
-    public long id;
+    private long id;
     public string name;
     public string email;
     public string registrationDate;
@@ -29,9 +29,11 @@ public class PlayerProfile
     }
 
 
-    public PlayerProfile()
+    public PlayerProfile(long id, string name)
     {
         //todo set id +1
+        this.id=id;
+        this.name = name;
         this.registrationDate = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
         this.totalGamesPlayed = 0;
         this.winCount = 0;

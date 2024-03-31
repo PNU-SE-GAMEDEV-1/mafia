@@ -6,7 +6,7 @@ using UnityEngine;
 [System.Serializable]
 public class GameState
 {
-    public GamePhase.PhaseType currentPhase;
+    public GamePhase currentPhase;
     public List<IngamePlayer> players;
     public List<ChatMessage> chatMessages;
     public int minLevel = 0;
